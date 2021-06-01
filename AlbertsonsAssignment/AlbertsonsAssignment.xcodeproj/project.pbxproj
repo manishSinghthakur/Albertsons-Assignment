@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06267CF4266674CF00FF3DF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267CF3266674CF00FF3DF3 /* AppDelegate.swift */; };
+		06267CFB266674CF00FF3DF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06267CF9266674CF00FF3DF3 /* Main.storyboard */; };
+		06267CFD266674D000FF3DF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06267CFC266674D000FF3DF3 /* Assets.xcassets */; };
+		06267D00266674D000FF3DF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06267CFE266674D000FF3DF3 /* LaunchScreen.storyboard */; };
+		06267D2C2666764700FF3DF3 /* MockAcronymsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267D272666764600FF3DF3 /* MockAcronymsServices.swift */; };
+		06267D2D2666764700FF3DF3 /* AcronymsServicesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267D282666764600FF3DF3 /* AcronymsServicesTest.swift */; };
+		06267D2E2666764700FF3DF3 /* MockDependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267D2B2666764600FF3DF3 /* MockDependencyResolver.swift */; };
+		06267D4A2666765B00FF3DF3 /* DependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267D312666765B00FF3DF3 /* DependencyResolver.swift */; };
+		06267D4B2666765B00FF3DF3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267D342666765B00FF3DF3 /* HomeViewModel.swift */; };
+		06267D4C2666765B00FF3DF3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267D362666765B00FF3DF3 /* HomeViewController.swift */; };
+		06267D4D2666765B00FF3DF3 /* HomeConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267D382666765B00FF3DF3 /* HomeConstant.swift */; };
+		06267D4E2666765B00FF3DF3 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267D3A2666765B00FF3DF3 /* HomeModel.swift */; };
+		06267D4F2666765B00FF3DF3 /* AcronymsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267D3D2666765B00FF3DF3 /* AcronymsServices.swift */; };
+		06267D502666765B00FF3DF3 /* AcronymsServicesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267D3E2666765B00FF3DF3 /* AcronymsServicesProtocol.swift */; };
+		06267D512666765B00FF3DF3 /* AcronymsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267D412666765B00FF3DF3 /* AcronymsDetailViewModel.swift */; };
+		06267D522666765B00FF3DF3 /* AcronymsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267D432666765B00FF3DF3 /* AcronymsDetailViewController.swift */; };
+		06267D532666765B00FF3DF3 /* AcronymsDetailConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267D452666765B00FF3DF3 /* AcronymsDetailConstant.swift */; };
+		06267D542666765B00FF3DF3 /* AcronymsDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267D472666765B00FF3DF3 /* AcronymsDetailModel.swift */; };
+		06267D552666765B00FF3DF3 /* AcronymsDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267D492666765B00FF3DF3 /* AcronymsDetailViewCell.swift */; };
+		06C5B90126667A2400AE5D41 /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5B90026667A2400AE5D41 /* HomeViewModelTest.swift */; };
+		06C5B90326667B4900AE5D41 /* HomeViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5B90226667B4900AE5D41 /* HomeViewControllerTest.swift */; };
+		06C5B90526667BE900AE5D41 /* ButtonActionTests+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5B90426667BE900AE5D41 /* ButtonActionTests+Extension.swift */; };
+		06C5B90B26667EFF00AE5D41 /* AlbertsonsAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5B90A26667EFF00AE5D41 /* AlbertsonsAlert.swift */; };
+		06C5B90D26667FD400AE5D41 /* AcronymsDetailViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5B90C26667FD400AE5D41 /* AcronymsDetailViewControllerTest.swift */; };
+		06C5B90F26667FE600AE5D41 /* AcronymsDetailViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5B90E26667FE600AE5D41 /* AcronymsDetailViewModelTest.swift */; };
+		06C5B91326668B8B00AE5D41 /* AlbertsonsAlertTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5B91226668B8B00AE5D41 /* AlbertsonsAlertTest.swift */; };
+		F0E3AC923D002AACB7959ECE /* Pods_AlbertsonsAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F7389C7C62E55B13EF7C3B /* Pods_AlbertsonsAssignment.framework */; };
+		F90CADD8505F19F20225626A /* Pods_AlbertsonsAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFA29CD825E3A63A283C385 /* Pods_AlbertsonsAssignmentTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06267D07266674D000FF3DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06267CE8266674CF00FF3DF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06267CEF266674CF00FF3DF3;
+			remoteInfo = AlbertsonsAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06267CF0266674CF00FF3DF3 /* AlbertsonsAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbertsonsAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06267CF3266674CF00FF3DF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		06267CFA266674CF00FF3DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06267CFC266674D000FF3DF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06267CFF266674D000FF3DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		06267D01266674D000FF3DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06267D06266674D000FF3DF3 /* AlbertsonsAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbertsonsAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06267D0C266674D000FF3DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06267D272666764600FF3DF3 /* MockAcronymsServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAcronymsServices.swift; sourceTree = "<group>"; };
+		06267D282666764600FF3DF3 /* AcronymsServicesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcronymsServicesTest.swift; sourceTree = "<group>"; };
+		06267D292666764600FF3DF3 /* Albertsons AssignmentsTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Albertsons AssignmentsTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		06267D2B2666764600FF3DF3 /* MockDependencyResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDependencyResolver.swift; sourceTree = "<group>"; };
+		06267D312666765B00FF3DF3 /* DependencyResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyResolver.swift; sourceTree = "<group>"; };
+		06267D342666765B00FF3DF3 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		06267D362666765B00FF3DF3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		06267D382666765B00FF3DF3 /* HomeConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeConstant.swift; sourceTree = "<group>"; };
+		06267D3A2666765B00FF3DF3 /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		06267D3D2666765B00FF3DF3 /* AcronymsServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcronymsServices.swift; sourceTree = "<group>"; };
+		06267D3E2666765B00FF3DF3 /* AcronymsServicesProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcronymsServicesProtocol.swift; sourceTree = "<group>"; };
+		06267D412666765B00FF3DF3 /* AcronymsDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcronymsDetailViewModel.swift; sourceTree = "<group>"; };
+		06267D432666765B00FF3DF3 /* AcronymsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcronymsDetailViewController.swift; sourceTree = "<group>"; };
+		06267D452666765B00FF3DF3 /* AcronymsDetailConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcronymsDetailConstant.swift; sourceTree = "<group>"; };
+		06267D472666765B00FF3DF3 /* AcronymsDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcronymsDetailModel.swift; sourceTree = "<group>"; };
+		06267D492666765B00FF3DF3 /* AcronymsDetailViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcronymsDetailViewCell.swift; sourceTree = "<group>"; };
+		06C5B90026667A2400AE5D41 /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
+		06C5B90226667B4900AE5D41 /* HomeViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTest.swift; sourceTree = "<group>"; };
+		06C5B90426667BE900AE5D41 /* ButtonActionTests+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonActionTests+Extension.swift"; sourceTree = "<group>"; };
+		06C5B90A26667EFF00AE5D41 /* AlbertsonsAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertsonsAlert.swift; sourceTree = "<group>"; };
+		06C5B90C26667FD400AE5D41 /* AcronymsDetailViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymsDetailViewControllerTest.swift; sourceTree = "<group>"; };
+		06C5B90E26667FE600AE5D41 /* AcronymsDetailViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymsDetailViewModelTest.swift; sourceTree = "<group>"; };
+		06C5B91226668B8B00AE5D41 /* AlbertsonsAlertTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertsonsAlertTest.swift; sourceTree = "<group>"; };
+		13BAA290E14264275AF14185 /* Pods-AlbertsonsAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbertsonsAssignment.release.xcconfig"; path = "Target Support Files/Pods-AlbertsonsAssignment/Pods-AlbertsonsAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		3DFA29CD825E3A63A283C385 /* Pods_AlbertsonsAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlbertsonsAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5569B2E6D2A1E69C6D56759A /* Pods-AlbertsonsAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbertsonsAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-AlbertsonsAssignmentTests/Pods-AlbertsonsAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C20F4F26585806D2EC921C1 /* Pods-AlbertsonsAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbertsonsAssignment.debug.xcconfig"; path = "Target Support Files/Pods-AlbertsonsAssignment/Pods-AlbertsonsAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		A1F7389C7C62E55B13EF7C3B /* Pods_AlbertsonsAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlbertsonsAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E14B15F0CA99FC7E333FF1A8 /* Pods-AlbertsonsAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbertsonsAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-AlbertsonsAssignmentTests/Pods-AlbertsonsAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06267CED266674CF00FF3DF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E3AC923D002AACB7959ECE /* Pods_AlbertsonsAssignment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06267D03266674D000FF3DF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F90CADD8505F19F20225626A /* Pods_AlbertsonsAssignmentTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06267CE7266674CF00FF3DF3 = {
+			isa = PBXGroup;
+			children = (
+				06267CF2266674CF00FF3DF3 /* AlbertsonsAssignment */,
+				06267D09266674D000FF3DF3 /* AlbertsonsAssignmentTests */,
+				06267CF1266674CF00FF3DF3 /* Products */,
+				E910E0270B57166DD773A5F0 /* Pods */,
+				8B85F3E0C9D272A370511DB8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		06267CF1266674CF00FF3DF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06267CF0266674CF00FF3DF3 /* AlbertsonsAssignment.app */,
+				06267D06266674D000FF3DF3 /* AlbertsonsAssignmentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06267CF2266674CF00FF3DF3 /* AlbertsonsAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				06267D152666754500FF3DF3 /* AppSetup */,
+				06267D3B2666765B00FF3DF3 /* Services */,
+				06267D2F2666765B00FF3DF3 /* Common */,
+				06267D322666765B00FF3DF3 /* Home */,
+				06267D3F2666765B00FF3DF3 /* AcronymsDetail */,
+				06267CF9266674CF00FF3DF3 /* Main.storyboard */,
+				06267CFC266674D000FF3DF3 /* Assets.xcassets */,
+				06267CFE266674D000FF3DF3 /* LaunchScreen.storyboard */,
+				06267D01266674D000FF3DF3 /* Info.plist */,
+			);
+			path = AlbertsonsAssignment;
+			sourceTree = "<group>";
+		};
+		06267D09266674D000FF3DF3 /* AlbertsonsAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				06C5B91026668B5700AE5D41 /* Common */,
+				06C5B90626667DFF00AE5D41 /* AcronymsDetail */,
+				06C5B8FD266679F800AE5D41 /* Home */,
+				06267D262666764600FF3DF3 /* Services */,
+				06267D2A2666764600FF3DF3 /* Support */,
+				06267D0C266674D000FF3DF3 /* Info.plist */,
+			);
+			path = AlbertsonsAssignmentTests;
+			sourceTree = "<group>";
+		};
+		06267D152666754500FF3DF3 /* AppSetup */ = {
+			isa = PBXGroup;
+			children = (
+				06267CF3266674CF00FF3DF3 /* AppDelegate.swift */,
+			);
+			path = AppSetup;
+			sourceTree = "<group>";
+		};
+		06267D262666764600FF3DF3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				06267D272666764600FF3DF3 /* MockAcronymsServices.swift */,
+				06267D282666764600FF3DF3 /* AcronymsServicesTest.swift */,
+				06267D292666764600FF3DF3 /* Albertsons AssignmentsTests-Bridging-Header.h */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		06267D2A2666764600FF3DF3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				06267D2B2666764600FF3DF3 /* MockDependencyResolver.swift */,
+				06C5B90426667BE900AE5D41 /* ButtonActionTests+Extension.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		06267D2F2666765B00FF3DF3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				06C5B90926667EE000AE5D41 /* AlertController */,
+				06267D302666765B00FF3DF3 /* DIP Resolver */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		06267D302666765B00FF3DF3 /* DIP Resolver */ = {
+			isa = PBXGroup;
+			children = (
+				06267D312666765B00FF3DF3 /* DependencyResolver.swift */,
+			);
+			path = "DIP Resolver";
+			sourceTree = "<group>";
+		};
+		06267D322666765B00FF3DF3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				06267D332666765B00FF3DF3 /* ViewModel */,
+				06267D352666765B00FF3DF3 /* Controller */,
+				06267D372666765B00FF3DF3 /* Constant */,
+				06267D392666765B00FF3DF3 /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		06267D332666765B00FF3DF3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				06267D342666765B00FF3DF3 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		06267D352666765B00FF3DF3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				06267D362666765B00FF3DF3 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		06267D372666765B00FF3DF3 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				06267D382666765B00FF3DF3 /* HomeConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		06267D392666765B00FF3DF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06267D3A2666765B00FF3DF3 /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		06267D3B2666765B00FF3DF3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				06267D3C2666765B00FF3DF3 /* Acronyms */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		06267D3C2666765B00FF3DF3 /* Acronyms */ = {
+			isa = PBXGroup;
+			children = (
+				06267D3D2666765B00FF3DF3 /* AcronymsServices.swift */,
+				06267D3E2666765B00FF3DF3 /* AcronymsServicesProtocol.swift */,
+			);
+			path = Acronyms;
+			sourceTree = "<group>";
+		};
+		06267D3F2666765B00FF3DF3 /* AcronymsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				06267D402666765B00FF3DF3 /* ViewModel */,
+				06267D422666765B00FF3DF3 /* Controller */,
+				06267D442666765B00FF3DF3 /* Constant */,
+				06267D462666765B00FF3DF3 /* Model */,
+				06267D482666765B00FF3DF3 /* View */,
+			);
+			path = AcronymsDetail;
+			sourceTree = "<group>";
+		};
+		06267D402666765B00FF3DF3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				06267D412666765B00FF3DF3 /* AcronymsDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		06267D422666765B00FF3DF3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				06267D432666765B00FF3DF3 /* AcronymsDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		06267D442666765B00FF3DF3 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				06267D452666765B00FF3DF3 /* AcronymsDetailConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		06267D462666765B00FF3DF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06267D472666765B00FF3DF3 /* AcronymsDetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		06267D482666765B00FF3DF3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				06267D492666765B00FF3DF3 /* AcronymsDetailViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		06C5B8FD266679F800AE5D41 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				06C5B8FF26667A0800AE5D41 /* Controller */,
+				06C5B8FE266679FE00AE5D41 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		06C5B8FE266679FE00AE5D41 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				06C5B90026667A2400AE5D41 /* HomeViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		06C5B8FF26667A0800AE5D41 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				06C5B90226667B4900AE5D41 /* HomeViewControllerTest.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		06C5B90626667DFF00AE5D41 /* AcronymsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				06C5B90826667E0B00AE5D41 /* Controller */,
+				06C5B90726667E0300AE5D41 /* ViewModel */,
+			);
+			path = AcronymsDetail;
+			sourceTree = "<group>";
+		};
+		06C5B90726667E0300AE5D41 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				06C5B90E26667FE600AE5D41 /* AcronymsDetailViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		06C5B90826667E0B00AE5D41 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				06C5B90C26667FD400AE5D41 /* AcronymsDetailViewControllerTest.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		06C5B90926667EE000AE5D41 /* AlertController */ = {
+			isa = PBXGroup;
+			children = (
+				06C5B90A26667EFF00AE5D41 /* AlbertsonsAlert.swift */,
+			);
+			path = AlertController;
+			sourceTree = "<group>";
+		};
+		06C5B91026668B5700AE5D41 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				06C5B91126668B5E00AE5D41 /* AlertViewController */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		06C5B91126668B5E00AE5D41 /* AlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				06C5B91226668B8B00AE5D41 /* AlbertsonsAlertTest.swift */,
+			);
+			path = AlertViewController;
+			sourceTree = "<group>";
+		};
+		8B85F3E0C9D272A370511DB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1F7389C7C62E55B13EF7C3B /* Pods_AlbertsonsAssignment.framework */,
+				3DFA29CD825E3A63A283C385 /* Pods_AlbertsonsAssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E910E0270B57166DD773A5F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C20F4F26585806D2EC921C1 /* Pods-AlbertsonsAssignment.debug.xcconfig */,
+				13BAA290E14264275AF14185 /* Pods-AlbertsonsAssignment.release.xcconfig */,
+				5569B2E6D2A1E69C6D56759A /* Pods-AlbertsonsAssignmentTests.debug.xcconfig */,
+				E14B15F0CA99FC7E333FF1A8 /* Pods-AlbertsonsAssignmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06267CEF266674CF00FF3DF3 /* AlbertsonsAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06267D0F266674D000FF3DF3 /* Build configuration list for PBXNativeTarget "AlbertsonsAssignment" */;
+			buildPhases = (
+				64774580539E2C705466ADBC /* [CP] Check Pods Manifest.lock */,
+				06267CEC266674CF00FF3DF3 /* Sources */,
+				06267CED266674CF00FF3DF3 /* Frameworks */,
+				06267CEE266674CF00FF3DF3 /* Resources */,
+				608D599862094570E72B14B1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlbertsonsAssignment;
+			productName = AlbertsonsAssignment;
+			productReference = 06267CF0266674CF00FF3DF3 /* AlbertsonsAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06267D05266674D000FF3DF3 /* AlbertsonsAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06267D12266674D000FF3DF3 /* Build configuration list for PBXNativeTarget "AlbertsonsAssignmentTests" */;
+			buildPhases = (
+				32BADB4CA9CA3B13EB4D8626 /* [CP] Check Pods Manifest.lock */,
+				06267D02266674D000FF3DF3 /* Sources */,
+				06267D03266674D000FF3DF3 /* Frameworks */,
+				06267D04266674D000FF3DF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06267D08266674D000FF3DF3 /* PBXTargetDependency */,
+			);
+			name = AlbertsonsAssignmentTests;
+			productName = AlbertsonsAssignmentTests;
+			productReference = 06267D06266674D000FF3DF3 /* AlbertsonsAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06267CE8266674CF00FF3DF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Manish Singh";
+				TargetAttributes = {
+					06267CEF266674CF00FF3DF3 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					06267D05266674D000FF3DF3 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 06267CEF266674CF00FF3DF3;
+					};
+				};
+			};
+			buildConfigurationList = 06267CEB266674CF00FF3DF3 /* Build configuration list for PBXProject "AlbertsonsAssignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06267CE7266674CF00FF3DF3;
+			productRefGroup = 06267CF1266674CF00FF3DF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06267CEF266674CF00FF3DF3 /* AlbertsonsAssignment */,
+				06267D05266674D000FF3DF3 /* AlbertsonsAssignmentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06267CEE266674CF00FF3DF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06267D00266674D000FF3DF3 /* LaunchScreen.storyboard in Resources */,
+				06267CFD266674D000FF3DF3 /* Assets.xcassets in Resources */,
+				06267CFB266674CF00FF3DF3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06267D04266674D000FF3DF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32BADB4CA9CA3B13EB4D8626 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlbertsonsAssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		608D599862094570E72B14B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlbertsonsAssignment/Pods-AlbertsonsAssignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlbertsonsAssignment/Pods-AlbertsonsAssignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlbertsonsAssignment/Pods-AlbertsonsAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64774580539E2C705466ADBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlbertsonsAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06267CEC266674CF00FF3DF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06267D4A2666765B00FF3DF3 /* DependencyResolver.swift in Sources */,
+				06C5B90B26667EFF00AE5D41 /* AlbertsonsAlert.swift in Sources */,
+				06267D4B2666765B00FF3DF3 /* HomeViewModel.swift in Sources */,
+				06267D4E2666765B00FF3DF3 /* HomeModel.swift in Sources */,
+				06267D522666765B00FF3DF3 /* AcronymsDetailViewController.swift in Sources */,
+				06267D502666765B00FF3DF3 /* AcronymsServicesProtocol.swift in Sources */,
+				06267CF4266674CF00FF3DF3 /* AppDelegate.swift in Sources */,
+				06267D512666765B00FF3DF3 /* AcronymsDetailViewModel.swift in Sources */,
+				06267D552666765B00FF3DF3 /* AcronymsDetailViewCell.swift in Sources */,
+				06267D4D2666765B00FF3DF3 /* HomeConstant.swift in Sources */,
+				06267D542666765B00FF3DF3 /* AcronymsDetailModel.swift in Sources */,
+				06267D532666765B00FF3DF3 /* AcronymsDetailConstant.swift in Sources */,
+				06267D4C2666765B00FF3DF3 /* HomeViewController.swift in Sources */,
+				06267D4F2666765B00FF3DF3 /* AcronymsServices.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06267D02266674D000FF3DF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C5B90D26667FD400AE5D41 /* AcronymsDetailViewControllerTest.swift in Sources */,
+				06267D2E2666764700FF3DF3 /* MockDependencyResolver.swift in Sources */,
+				06C5B90326667B4900AE5D41 /* HomeViewControllerTest.swift in Sources */,
+				06267D2C2666764700FF3DF3 /* MockAcronymsServices.swift in Sources */,
+				06267D2D2666764700FF3DF3 /* AcronymsServicesTest.swift in Sources */,
+				06C5B91326668B8B00AE5D41 /* AlbertsonsAlertTest.swift in Sources */,
+				06C5B90F26667FE600AE5D41 /* AcronymsDetailViewModelTest.swift in Sources */,
+				06C5B90126667A2400AE5D41 /* HomeViewModelTest.swift in Sources */,
+				06C5B90526667BE900AE5D41 /* ButtonActionTests+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06267D08266674D000FF3DF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06267CEF266674CF00FF3DF3 /* AlbertsonsAssignment */;
+			targetProxy = 06267D07266674D000FF3DF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06267CF9266674CF00FF3DF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06267CFA266674CF00FF3DF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06267CFE266674D000FF3DF3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06267CFF266674D000FF3DF3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06267D0D266674D000FF3DF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		06267D0E266674D000FF3DF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06267D10266674D000FF3DF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C20F4F26585806D2EC921C1 /* Pods-AlbertsonsAssignment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlbertsonsAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.albertsons.AlbertsonsAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06267D11266674D000FF3DF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13BAA290E14264275AF14185 /* Pods-AlbertsonsAssignment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlbertsonsAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.albertsons.AlbertsonsAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		06267D13266674D000FF3DF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5569B2E6D2A1E69C6D56759A /* Pods-AlbertsonsAssignmentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlbertsonsAssignmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.albertsons.AlbertsonsAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlbertsonsAssignment.app/AlbertsonsAssignment";
+			};
+			name = Debug;
+		};
+		06267D14266674D000FF3DF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E14B15F0CA99FC7E333FF1A8 /* Pods-AlbertsonsAssignmentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlbertsonsAssignmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.albertsons.AlbertsonsAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlbertsonsAssignment.app/AlbertsonsAssignment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06267CEB266674CF00FF3DF3 /* Build configuration list for PBXProject "AlbertsonsAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06267D0D266674D000FF3DF3 /* Debug */,
+				06267D0E266674D000FF3DF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06267D0F266674D000FF3DF3 /* Build configuration list for PBXNativeTarget "AlbertsonsAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06267D10266674D000FF3DF3 /* Debug */,
+				06267D11266674D000FF3DF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06267D12266674D000FF3DF3 /* Build configuration list for PBXNativeTarget "AlbertsonsAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06267D13266674D000FF3DF3 /* Debug */,
+				06267D14266674D000FF3DF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06267CE8266674CF00FF3DF3 /* Project object */;
+}

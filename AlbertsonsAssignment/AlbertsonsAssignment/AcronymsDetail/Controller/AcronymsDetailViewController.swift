@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// `UIViewController` show  searched  acronyms matching meanings.
+/// `AcronymsDetailViewController` show  searched  acronyms matching meanings.
 class AcronymsDetailViewController: UIViewController {
     
     // MARK: - Outlets
@@ -18,10 +18,12 @@ class AcronymsDetailViewController: UIViewController {
     
     //MARK: - Instance variables
     
-    /// Refers to view model for LoginViewController
+    /// Refers to view model for AcronymsDetailViewController
     lazy var viewModel: AcronymsDetailViewModel = {
         return AcronymsDetailViewModel()
     }()
+    
+    // MARK: - ViewController LifeCycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,9 @@ class AcronymsDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // MARK: - Instance methods
+    
+    /// Method to bind the Acronym search result to `UITableView`
     func bindTableView() {
         viewModel.acronymResults.bind(to: acronymsDetailTableView) { dataSource, indexPath, tableView in
             let cell = tableView.dequeueReusableCell(withIdentifier: AcronymsDetailConstant.AcronymsDetailIdentifier.cellIdentifier, for: indexPath) as! AcronymsDetailViewCell

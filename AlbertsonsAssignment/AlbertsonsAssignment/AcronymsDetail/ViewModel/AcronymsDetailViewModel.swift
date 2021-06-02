@@ -13,13 +13,10 @@ import Bond
 
 /// User Acronyms DetailView events can be performed here
 final class AcronymsDetailViewModel {
-
+    
     /// `String` for the acronymResults
     var searchedAcronym: String!
     
     /// `MutableObservableArray` for the acronymResults
     let acronymResults = MutableObservableArray<LF>([])
-
-
-
 }

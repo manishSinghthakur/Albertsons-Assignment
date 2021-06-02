@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+// MARK: - AcronymsDetailModel
+struct AcronymsDetailModel: Codable {
+    
+}
+
+

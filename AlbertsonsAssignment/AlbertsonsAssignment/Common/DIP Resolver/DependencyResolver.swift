@@ -16,7 +16,7 @@ import Dip
  *  - `configure()` configure using DIP container.
  */
 
-/// Dependency Resolver provides Dip container references to the available services in Madelyne application.
+/// Dependency Resolver provides Dip container references to the available services in Albertsons application.
 struct DependencyResolver {
     
     static let container: DependencyContainer = DependencyContainer()
@@ -30,7 +30,7 @@ struct DependencyResolver {
 }
 
 
-// MARK: - GithubService
+// MARK: - AcronymsServices
 extension DependencyResolver {
     
     /// `AcronymsServices` interacts with Acronyms API.

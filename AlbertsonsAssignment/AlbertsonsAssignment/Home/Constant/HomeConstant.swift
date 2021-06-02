@@ -25,4 +25,13 @@ enum  HomeConstant  {
         // Acronyms API
         static let acronymsAPIURL = "http://www.nactem.ac.uk/software/acromine/dictionary.py?sf="
     }
+    
+    /// Acronyms AlertDetail  Detail
+    enum AlertDetail {
+        // Acronyms AlertDetail messages
+        static let title = "Albertsons"
+        static let message = "No matching meaning found for Acronyms"
+        static let buttonTitle = "OK"
+    }
 }
+

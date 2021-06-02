@@ -12,7 +12,7 @@ import UIKit
 // MARK: - AcronymsDetailViewCell class
 
 /**
- *  The cell displayed on the homeTableView screen. Each cell represents an `Github users` and displays git user avtar, git username.
+ *  The cell displayed on the acronymsDetailTableView screen. Each cell represents an `Acronyms meanings` and displays list of the meanings for the searched acronyms.
  */
 class AcronymsDetailViewCell: UITableViewCell {
     

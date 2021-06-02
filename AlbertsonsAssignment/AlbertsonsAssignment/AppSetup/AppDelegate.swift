@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /// Tells the delegate that the launch process is almost done and the app is almost ready to run.
     ///
     /// - Parameters:
-    ///   - application: Lowes Application
+    ///   - application: Albertsons Application
     ///   - launchOptions: optional value
     /// - Returns: Bool value, by default
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

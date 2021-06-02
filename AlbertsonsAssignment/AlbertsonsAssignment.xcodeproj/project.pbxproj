@@ -135,9 +135,8 @@
 				06267D2F2666765B00FF3DF3 /* Common */,
 				06267D322666765B00FF3DF3 /* Home */,
 				06267D3F2666765B00FF3DF3 /* AcronymsDetail */,
-				06267CF9266674CF00FF3DF3 /* Main.storyboard */,
+				06C5B91426676F7700AE5D41 /* Board */,
 				06267CFC266674D000FF3DF3 /* Assets.xcassets */,
-				06267CFE266674D000FF3DF3 /* LaunchScreen.storyboard */,
 				06267D01266674D000FF3DF3 /* Info.plist */,
 			);
 			path = AlbertsonsAssignment;
@@ -384,6 +383,15 @@
 				06C5B91226668B8B00AE5D41 /* AlbertsonsAlertTest.swift */,
 			);
 			path = AlertViewController;
+			sourceTree = "<group>";
+		};
+		06C5B91426676F7700AE5D41 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				06267CF9266674CF00FF3DF3 /* Main.storyboard */,
+				06267CFE266674D000FF3DF3 /* LaunchScreen.storyboard */,
+			);
+			path = Board;
 			sourceTree = "<group>";
 		};
 		8B85F3E0C9D272A370511DB8 /* Frameworks */ = {

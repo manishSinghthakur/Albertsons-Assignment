@@ -21,7 +21,7 @@ final class HomeViewModel {
     /// `string` for the acronyms
     var acronyms = Observable<String?>("")
     
-    /// User information model.
+    /// Acronyms detail  model.
     var homeViewModel: [HomeModel]!
     
     /// Resolve dependency with `AcronymsServicesProtocol`.
@@ -31,7 +31,7 @@ final class HomeViewModel {
     
     /// get AcronymsMeanings For SearchString
     ///
-    /// - Parameter completion: `Completion` value for getting the async meanings result
+    /// - Parameter completion: `Completion` value for getting the acronyms meanings result
     func getAcronymsMeaningsForSearchString(completion: @escaping Completion){
         guard let acronymsString = acronyms.value else {
             return

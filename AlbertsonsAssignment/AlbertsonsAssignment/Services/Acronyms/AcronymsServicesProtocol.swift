@@ -13,6 +13,11 @@ import Foundation
  */
 protocol AcronymsServicesProtocol {
     
+    /// get Acronyms Meanings
+       ///
+       /// - Parameters:
+       ///   - acronyms: string` of 'Acronyms`
+       ///   - completion: type of `[HomeModel]` for matching acronyms
     func getAcronymsMeanings(acronyms: String, _ completion: @escaping ([HomeModel]) -> Void)
 
 }

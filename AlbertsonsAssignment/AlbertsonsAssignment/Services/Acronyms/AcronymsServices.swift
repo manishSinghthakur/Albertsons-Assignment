@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+/**
+ *  class `AcronymsServices` defines set of  fuction to communicate with the network APIs
+ */
 class AcronymsServices: AcronymsServicesProtocol {
     
     /// get Acronyms Meanings
@@ -17,10 +20,8 @@ class AcronymsServices: AcronymsServicesProtocol {
     ///   - acronyms: string` of 'Acronyms`
     ///   - completion: type of `[HomeModel]` for matching acronyms
     func getAcronymsMeanings(acronyms: String, _ completion: @escaping ([HomeModel]) -> Void){
-        let acronymsURl = "\(HomeConstant.AcronymsAPI.acronymsAPIURL)\(acronyms)"
-        let request = NSMutableURLRequest(url: NSURL(string: acronymsURl)! as URL,
-                                          cachePolicy: .useProtocolCachePolicy,
-                                          timeoutInterval: 10.0)
+        let acronymsURL = "\(HomeConstant.AcronymsAPI.acronymsAPIURL)\(acronyms)"
+        let request = NSMutableURLRequest(url: NSURL(string: acronymsURL)! as URL,cachePolicy: .useProtocolCachePolicy,timeoutInterval: 10.0)
         request.httpMethod = "GET"
         let session = URLSession.shared
         let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in

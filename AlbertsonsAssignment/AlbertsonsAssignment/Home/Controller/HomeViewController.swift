@@ -28,6 +28,8 @@ class HomeViewController: UIViewController {
         return HomeViewModel()
     }()
     
+    // MARK: - ViewController LifeCycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         bindTextField()
@@ -36,7 +38,7 @@ class HomeViewController: UIViewController {
     
     // MARK: - IBAction methods
     
-    /// Called when users tap the Login button
+    /// Called when users tap the Search button
     /// - Parameter sender: represents UIButton
     @IBAction func onSearchButtonAction(_ sender: UIButton) {
         self.acronymsTextField.resignFirstResponder()
@@ -47,7 +49,7 @@ class HomeViewController: UIViewController {
                     self.performSegue(withIdentifier: HomeConstant.SegueID.segueAcronymsDetail, sender: nil)
                 }
             }else{
-                AlbertsonsAlert.show(title: "Albertsons", message: "No matching meaning found for Acronyms", buttons: ["OK"], completion: nil)
+                AlbertsonsAlert.show(title: HomeConstant.AlertDetail.title, message: HomeConstant.AlertDetail.message, buttons: [HomeConstant.AlertDetail.buttonTitle], completion: nil)
             }
             self.hideIndicator()
         }
@@ -68,7 +70,7 @@ class HomeViewController: UIViewController {
     }
 }
 
-// MARK: - extension to bind username to Textfield
+// MARK: - extension to bind acronym search Observable string to Textfield
 extension HomeViewController {
     
     /// Method for bind userName data and validate username field text.
@@ -76,7 +78,7 @@ extension HomeViewController {
         self.viewModel.acronyms.bidirectionalBind(to: self.acronymsTextField.reactive.text)
     }
     
-    /// Handle Login button validation using `Bond`.
+    /// Handle Search button validation using `Bond`.
     private func bindSearchButtonValidation() {
         combineLatest(self.acronymsTextField.reactive.text, self.acronymsTextField.reactive.text) { acronymsString, acronymsStringValue in
             return !(acronymsString!.isEmpty) && !(acronymsStringValue!.isEmpty)
